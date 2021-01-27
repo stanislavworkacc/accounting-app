@@ -41,6 +41,7 @@ const PORT = process.env.PORT || 3200;
 
 app.listen(PORT, () => {
     console.log(`Server was running on the port ${PORT}`)
-})
+});
+
 
 module.exports = jsonParser;
