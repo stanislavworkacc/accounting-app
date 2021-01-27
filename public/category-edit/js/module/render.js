@@ -6,12 +6,9 @@ const elementBefore = document.getElementById('input-field');
 export function render (data) {
     const currentUrl = window.location.href
     const currentId = currentUrl.split('').slice(31, 67).join('');
-    console.log(currentId);
-    console.log(data);
-    
+ 
     for(let i = 0; i < data.length; i++) {
         if(currentId === data[i].id) {
-            console.log('Element ID',data[i].id)
             addElementInHtml(data[i].position, data[i].price)
         }
     }
