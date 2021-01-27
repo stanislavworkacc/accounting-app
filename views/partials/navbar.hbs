@@ -1,18 +1,17 @@
 <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Учет товаров</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="right">
 
         {{#if isHome}}
-        <li class="active"><a href="/">Главная страница</a></li>
+        <li class="active"><a href="/">Главная</a></li>
             {{else}}
-                <li><a href="/">Главная страница</a></li>
+                <li><a href="/">Главная</a></li>
         {{/if}}
 
         {{#if isCategory}}
-        <li class="active"><a href="/category">Все категории</a></li>
+        <li class="active"><a href="/category">Категории</a></li>
           {{else}}
-            <li><a href="/category">Все категории</a></li>
+            <li><a href="/category">Категории</a></li>
         {{/if}}
         {{#if isAdd}}
         <li class="active"><a href="/add">Добавить категорию</a></li>
