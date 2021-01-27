@@ -1,0 +1,103 @@
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #57626f;
+    border-right: 4px solid #E0E5EA;
+    z-index: 100;
+    left: -300px;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    top: 0px;
+    transform: all 600ms;
+}
+
+#sidebar.active {
+   left: -40px;
+   padding-left: 20px;
+}
+
+#sidebar ul li:first-child {
+    text-align: center;
+    color: white;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(first-child) {
+    width: 90%;
+    margin-left: 10%;
+    color: white;
+    font-size: 1.11em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a {
+    color: #dfe5eb;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    color: #59e9df;
+    text-decoration: none;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 300px;
+    top: 20px;
+    padding: 10px;
+    background: #E0E5EA;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666666;
+    margin: 4px;
+}
+
+#sidebar .toggle-btn:hover {
+    background: #556270;
+}
+
+#sidebar .span:hover {
+    background: #fafafa;
+}
+
+.delete-btn{
+    background: #222;
+    height: 35px;
+    border: none;
+    color: #eee;
+    font-size: 21px;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.counter__value {
+    display: flex;
+    justify-content: flex-start;
+    width: 30px !important;
+}
+
+.amount_row {
+    text-align: center;
+    width: 225px !important;
+}
+
+.amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

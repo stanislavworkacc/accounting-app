@@ -1,0 +1,81 @@
+
+.wrapperPosition {
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.typeAndAmount {
+    display: flex;
+    justify-content: space-around;
+}
+
+.coffeeType { 
+    grid-area: СoffeType;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Cookie', cursive;
+}
+
+
+.counter__btn {
+    width: 50%;
+    min-width: 140px;
+    background: #222;
+    height: 35px;
+    border: none;
+    color: #eee;
+    font-size: 21px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+input {
+    outline: none; border: none;
+    padding-left: 30px;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 0px !important;
+}
+
+.grid-container:first-child{
+    margin-top: 30px;
+}
+
+.containerOfPosition {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 0.9fr 0.8fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". coffee amount ."
+      ". plus minus ."
+      ". . . .";
+}
+.coffeeType { 
+    width: 100%;
+      grid-area: coffee;
+      display: flex;
+      padding-left: 30px;
+      justify-content: start;
+}
+.doneCoffee { 
+    box-sizing: content-box;
+      grid-area: amount;
+      display: flex;
+      font-family: 'Cookie', cursive;
+      font-size: 25px;
+}
+
+.addCoffee { grid-area: plus; }
+.deleteCoffee { 
+    grid-area: minus; }
+
+.priceOFPosition {
+    padding-left: 10px;
+}

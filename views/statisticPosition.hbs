@@ -1,0 +1,38 @@
+<h4 style="text-align: center">{{day}}</h4>
+<table class="table highlight centered">
+    <thead>
+        <tr>
+            <th>Назва позиції</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Загальна сума</th>
+        </tr>
+    </thead>
+
+        <tbody>
+            {{#if category.positionAndAmount.length}}
+            {{#each category.positionAndAmount}}
+          <tr>
+            <td class="namePosition">{{name}}</td>
+            <td class="price">{{price}}</td>
+            <td class="amount">
+              {{amount}}
+            </td>
+            <td class="sumOfPosition">
+                {{!-- MONEY --}}
+            </td>
+          </tr>
+          {{/each}}
+          <td class="namePosition">Загальнна сума по категорії</td>
+            <td></td>
+            <td></td>
+            <td class="sumOfMoney">
+                {{!-- MONEY --}}
+            </td>
+          {{else}}
+          <p>SORRY</p>
+        {{/if}}
+        </tbody>
+      </table>
+      
+

@@ -1,0 +1,29 @@
+     <table class="table highlight centered">
+        <thead>
+          <tr>
+              <th>Назва позиції</th>
+              <th>Ціна</th>
+              <th class="amount_row">Кількість</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            {{#if category.position.length}}
+            {{#each position}}
+          <tr>
+            <td class="namePosition">{{this}}</td>
+            <td class="price"></td>
+            <td class="amount">
+              <input type="text" class="counter__value" value="0" readonly>
+            </td>
+            <td data-add="add">Добавити</th>
+            <td data-add="delete">Видалити</th>
+          </tr>
+          {{/each}}
+          {{else}}
+          <p>SORRY</p>
+        {{/if}}
+        </tbody>
+      </table>
+            
+

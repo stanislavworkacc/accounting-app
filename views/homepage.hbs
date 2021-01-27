@@ -1,0 +1,18 @@
+{{#if onlyCategories.length}}
+{{#each allReport}}
+<div class="row">
+  <div class="col ">
+    <div class="card">
+      <div style="display: flex; flex-direction:column;" class="card-image card-style">
+        {{category}}
+      </div>
+      <div class="card-action">
+        <a href="/statistic/{{id}}">Відкрити статистику за <strong style="color: black;">{{data}}</strong></a>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+{{else}}
+<p>Пока без отчетов</p>
+{{/if}}

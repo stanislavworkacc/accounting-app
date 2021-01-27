@@ -1,0 +1,19 @@
+{{#if category.length}}
+{{#each category}}
+<div class="row">
+  <div class="col ">
+    <div class="card">
+      <div class="card-image card-style">
+        {{title}}
+      </div>
+      <div class="card-action">
+        <a href="/category/{{id}}" target="_blank">Открыть категорию</a>
+        <a href="/category/{{id}}/edit?allow=true">Редактировать</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+{{else}}
+<p>Курсов пока нет</p>
+{{/if}}
