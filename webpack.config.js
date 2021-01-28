@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
       category: './public/category/js/addPositionInCat.js',
       categoryEdit: './public/category-edit/js/app.js',
