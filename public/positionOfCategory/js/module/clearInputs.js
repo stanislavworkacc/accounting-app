@@ -1,4 +1,4 @@
-export function clearInputs() {
+export const clearInputs = () => {
     console.log('here')
     const counterValues = document.querySelectorAll('.counter__value');
     const doneCoffeeForDay = document.getElementById('doneCoffeeForToday');

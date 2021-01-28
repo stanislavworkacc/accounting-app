@@ -1,11 +1,10 @@
 import {reqToData} from './module/dataFromServer.js';
-import {render} from './module/render.js'
+import {render, addElementInHtml} from './module/render.js'
 
-function activationEdit() {
+const activationEdit = () => {
     reqToData().then(data => {
         render(data)
     })
-
 };
 
 activationEdit();

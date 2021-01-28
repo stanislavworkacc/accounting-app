@@ -16,7 +16,7 @@ resetBtn.addEventListener('click', () => {
     clearInputs();
 });
 
-export function eventsPositionOfCat(td) {
+export const eventsPositionOfCat = (td) => {
     if(td === undefined) {
         return;
     };

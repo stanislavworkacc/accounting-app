@@ -3,7 +3,7 @@ const elementBefore = document.getElementById('input-field');
 //const allPosition = document.getElementById('allPosition');
 
 
-export function render (data) {
+export const render = (data) => {
     const currentUrl = window.location.href
     const currentId = currentUrl.split('').slice(31, 67).join('');
  
@@ -14,7 +14,7 @@ export function render (data) {
     }
 };
 
-function addElementInHtml(position, price) {
+export const addElementInHtml = (position, price) => {
     for(let i = 0; i <position.length; i++) {
         const template = `
         <input id="position" name="position" type="text" class="validate newInput" value="${position[i]}">

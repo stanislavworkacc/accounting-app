@@ -1,4 +1,4 @@
-export function donePositionForDay() {
+export const donePositionForDay = () => {
     const doneInput = document.getElementById('doneCoffeeForToday');
     const amountPosition = document.querySelectorAll('.counter__value');
 

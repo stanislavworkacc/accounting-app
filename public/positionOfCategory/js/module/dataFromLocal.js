@@ -1,4 +1,4 @@
-export function dataFromLocal() {
+export const dataFromLocal = () => {
     const namePosition = document.querySelectorAll('.namePosition');
     const amountPosition = document.querySelectorAll('.counter__value');
 

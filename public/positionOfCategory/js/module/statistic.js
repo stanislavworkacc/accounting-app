@@ -1,8 +1,4 @@
- const sendInfoBtn = document.getElementById('sendInfo');
-
- sendInfoBtn.addEventListener('click', sendStatistic);
-
-function sendStatistic() {
+export const sendStatistic = () => {
     const name = document.querySelectorAll('.namePosition');
     const price = document.querySelectorAll('.price');
     const amount = document.querySelectorAll('.counter__value');
@@ -18,16 +14,8 @@ function sendStatistic() {
                 price: price[i].innerHTML
             }
         )
-
-        // let key = `positionAndAmount${i}`;
-        // data[name[i].innerHTML] = [
-        //     {
-        //     amount: amount[i].value,
-        //     price: price[i].innerHTML
-        //     }
-        // ]
     }
-    console.log(data);
+
     let xhr = new XMLHttpRequest();
     let url = 'http://localhost:3200/statistic';
     xhr.open('POST', url, true);

@@ -5,4 +5,5 @@ export const menu = () => {
     function openMenu() {
         menuBtn.classList.toggle('active');
     };
+    console.log('hete')
 };

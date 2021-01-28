@@ -1,6 +1,6 @@
 import { reqToData } from './reqToData.js';
 
-export const priceForDayCategory= (namePosition, direction) => {
+export const priceForDayCategory = (namePosition, direction) => {
     const currentUrl = window.location.href;
     const currentId = currentUrl.split('').slice(31, 67).join('');
     const dayPriceCategory = document.getElementById('priceOfPosition');

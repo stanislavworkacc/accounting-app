@@ -1,7 +1,7 @@
 import { positionData } from './positionData.js';
 
 
-export async function priceOfPositionInCat () {
+export const priceOfPositionInCat =  async () => {
     const priceOfPositionHTML = document.querySelectorAll('.price');
     const priceOfPositionData = await positionData();
 

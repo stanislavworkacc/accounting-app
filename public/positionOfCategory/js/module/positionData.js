@@ -1,6 +1,6 @@
 import { reqToData } from './reqToData.js';
 
-export async function positionData () {
+export const positionData = async () => {
     const data = await reqToData();
     const currentUrl = window.location.href
     const currentId = currentUrl.split('').slice(31, 67).join('');

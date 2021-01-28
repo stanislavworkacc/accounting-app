@@ -15,7 +15,6 @@ router.get('/', async (req, res) => {
 
 router.get('/dataposition', async (req, res) => {
     const category = await Category.getAll();
-    console.log(category)
     res.json(category)
 });
 
